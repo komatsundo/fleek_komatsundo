@@ -1,0 +1,174 @@
+/*
+車種紹介ページ
+car-model.html
+--------------*/
+
+//下にグラデのある見出し
+
+.sec-line-ttl {
+	padding-bottom: 17px;
+	border-bottom: 2px solid;
+	-o-border-image: -o-linear-gradient(right, #e5e5e5 0%, #dae24a 100%);
+	border-image: -webkit-gradient(linear, right top, left top, from(#e5e5e5), to(#dae24a));
+	border-image: linear-gradient(270deg, #e5e5e5 0%, #dae24a 100%);
+	border-image-slice: 1;
+	font-size: 21px;
+	color: #333333;
+}
+
+//ボタンベース
+
+.button-large {
+	display: block;
+	border-radius: 5px;
+	color: #ffffff;
+	text-align: center;
+	background-color: #941f24;
+	width: 88%;
+	max-width: 575px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 22px 0 ;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-shadow: 0 2px 5px rgba($color: #000000, $alpha: .1);
+
+	&-inside {
+		display: inline-block;
+		position: relative;
+		padding: 0 52px;
+		line-height: 0.88;
+		margin-top: 3px;
+		letter-spacing: 0.1em;
+	}
+
+	&-arw {
+		display: inline-block;
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-74%);
+		-ms-transform: translateY(-74%);
+		transform: translateY(-74%);
+		right: 0;
+		width: 22px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+/*
+ここからページスタイル
+------------------------*/
+
+.car-model-slide {
+	margin-bottom: 58px;
+
+	#fv-slider {
+		img {
+			//i高さがvwだと表示がおかしくなるから縦横比を揃える
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+.page-car-kind {
+	background-color: #f0f0f0;
+	padding: 34px 0 37px;
+	color: #333333;
+
+	@media screen and (max-width: 767px) {
+		padding: 26px 0 0;
+	}
+
+	&-ttl {
+		margin-bottom: 19px;
+	}
+}
+
+.car-info-box {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	@media screen and (max-width: 767px) {
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	&-group {
+		text-align: center;
+		width: 25%;
+
+		@media screen and (max-width: 767px) {
+			width: 50%;
+			margin-bottom: 28px;
+		}
+	}
+
+	&-ttl {
+		margin-bottom: 1.3rem;
+	}
+
+	&-data {
+	}
+}
+
+.page-car-detail {
+	padding: 90px 0;
+
+	@media screen and (max-width: 767px) {
+		padding: 10% 0 15%;
+	}
+
+	&-ttl {
+		margin-bottom: 33px;
+		padding-bottom: 22px;
+	}
+}
+
+.detail-group {
+	color: #333333;
+	&-ttl {
+		font-size: 21px;
+		font-weight: 400;
+		margin-bottom: 22px;
+	}
+
+	&-desc {
+		line-height: 2;
+		margin-bottom: 50px;
+		letter-spacing: 0.05em;
+		font-size: 16px;
+
+		@media screen and (max-width: 1024px) {
+			margin-bottom: 5%;
+			line-height: 1.75;
+		}
+	}
+
+	&-movie {
+		margin-bottom: 60px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&-btn {
+	}
+}

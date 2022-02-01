@@ -1,0 +1,38 @@
+$breakpoints: (
+    'sp': 'only screen and (max-width: 750px)',
+    'pc': 'print,screen and (min-width: 751px)'
+) !default;
+
+@mixin mq($breakpoint: md) {
+    @media #{map-get($breakpoints, $breakpoint)} {
+        @content;
+    }
+}
+
+@mixin bg($img) {
+  background-image: $img;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin btn {
+  width: 580px;
+  text-align: center;
+  margin: auto;
+  background-color: whitesmoke;
+  margin-top: 60px;
+  margin-bottom: 90px;
+  padding:22px 0;
+  border: thin solid rgb(180, 180, 180);
+  box-shadow: 0 2px 10px #ccc;
+}
+
+@function vw($target_px){
+    @return $target_px / 375 * 100vw;
+}
+
+@mixin rich-gradation-line {
+border-bottom:2px solid ;
+border-image: linear-gradient(270deg, #E5E5E5 0%, #DAE24A 100%);
+border-image-slice: 1;
+}
