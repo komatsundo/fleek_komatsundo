@@ -1,0 +1,89 @@
+html {
+  font-size:62.5%;
+}
+
+// minivan-suv開始
+.minivan-suv {
+  max-width: $PC-max-content-width;
+  margin: 0 auto 0;
+
+@include mq(sp) {
+  width: 92%;
+}
+  .minivan-suv-item-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 28px;
+    max-width: 1184px;
+    justify-content: start;
+    padding: 3rem 0;
+    margin:3rem auto;
+    @include mq(sp) {
+    margin-top:0;
+    }
+    .minivan-suv-item {
+      width: calc(33.3% - 21px);
+      // width: 30%;
+      cursor: pointer;
+      // min-width: 300px;
+      border: 1px solid #d3d3d3;
+      border-radius: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.16);
+      position: relative;
+      transition: box-shadow .3s;
+      padding-top: 60px;
+      padding-bottom: 50px;
+      padding: 60px 24px 50px;
+      box-sizing: border-box;
+      @include mq(pc) {
+        figure{
+        min-height: 170px;
+        }
+      }
+            &:hover{
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.25);
+      }
+
+      @include mq(sp) {
+        width: 100%;
+        padding: 40px 12px 30px;
+      }
+
+      a {
+        color: #333333;
+        box-sizing: border-box;
+
+        img {
+          width: 100%;
+        }
+
+        h3 {
+          margin-top: 42px;
+          margin-bottom: 42px;
+          font-size: 2.1rem;
+          padding-left: 6px;
+
+          @include mq(sp){
+            margin-bottom: 30px;
+          }
+        }
+        .minivan-suv-item-text {
+          margin-bottom: 14px;
+          padding-left: 6px;
+          font-size: 1.6rem;
+        }
+      }
+      .minivan-suv-item-svg{
+        position: absolute;
+        right: 40px;
+        bottom: 68px;
+
+        @include mq(sp){
+          bottom: 45px;
+          right: 30px;
+        }
+      }
+    } // minivan-suv-item
+  } // minivan-suv-item-wrapper
+}
+// minivan-suv終了

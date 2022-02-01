@@ -1,0 +1,74 @@
+.page{
+  .entry-title{
+    font-size:2rem;
+    font-weight: normal;
+    line-height: 3rem;
+}
+}
+
+.slick-dots li button:before {
+  font-size: 36px;
+  top: 7px;
+  }
+.slick-active button:before {
+  font-size: 32px!important;
+  top: 7px!important;
+  opacity: 0.7!important;
+}
+
+@media (max-width: 768px) {
+  .slick-dots li button:before {
+  font-size: 32px;
+  top: 2px ;
+  }
+  .slick-active button:before {
+  font-size: 32px!important;
+  top: 2px!important;
+  opacity: 0.7!important;
+  }
+
+  .toggle_btn.sp-only {
+  top: 12px;
+}
+  .button-large {
+    white-space: nowrap;
+  }
+  .cars-news-list .card-content {
+    padding: 18px 48px 38px 19px;
+  }
+
+  #navArea.open nav .inner a {
+    display: block;
+  }
+}
+
+.pager-area .page-numbers.next,
+.pager-area .page-numbers.prev {
+  display: none;
+}
+
+.blog .button:after {
+  top: 24%;
+}
+
+.card-img {
+  object-fit: cover;
+}
+.site-main .single-content-wrap .entry-title {
+line-height: 3.5rem;
+}
+
+.home .site-main .blog-list .button a{
+display: block;
+padding: 20px 0;
+font-weight: bold;
+}
+
+.home .site-main .blog a.button {
+padding: 14px 0;
+font-weight: bold;
+}
+
+.home .button{
+  padding: 0;
+}

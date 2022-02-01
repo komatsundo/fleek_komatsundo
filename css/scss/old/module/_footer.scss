@@ -1,0 +1,28 @@
+footer {
+  background-color: #F5F5F5;
+  width: 100%;
+  padding-bottom: 82px;
+  .flex {
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-bottom:1px solid ;
+  border-image: linear-gradient(270deg, #E5E5E5 0%, #DAE24A 100%);
+  border-image-slice: 1;
+  li {
+    font-size: 14px;
+  }
+}
+.footer-img {
+   width: 230px;
+  img {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 1.625;
+  }
+}
+
+}
