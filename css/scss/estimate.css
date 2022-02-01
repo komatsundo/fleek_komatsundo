@@ -1,0 +1,81 @@
+.estimate-wrapper .entry-title {
+  margin-bottom: 3rem;
+}
+
+.estimate-wrapper .wq-Monitor > .wq--entries > .wq--entry > .wq--prop {
+  padding: 16px;
+  font-size: 16px !important;
+}
+
+.estimate-wrapper .wq-InputGroup .wq-type-primary {
+  margin: 0 auto 5rem !important;
+  border-radius: 5px !important;
+  background: #941F24 !important;
+  width: 50% !important;
+  min-width: 344px !important;
+  padding: 1.5rem !important;
+}
+
+.estimate-wrapper .wq-Monitor .wq--entries {
+  border-radius: 5px 5px 0 5px !important;
+  position: relative;
+  left: 0;
+}
+
+.estimate-wrapper .wq-Monitor .wq--entry.wq-for-tax,
+.estimate-wrapper .wq-Monitor .wq--entry.wq-for-subtotal {
+  border-top: 0 !important;
+}
+
+.estimate-wrapper .wq-Monitor .wq--entry.wq-for-total {
+  border-top: 0 !important;
+  border-radius: 0px 0px 5px 5px !important;
+}
+
+.estimate-wrapper .wq-Monitor .wq--head {
+  padding: 2rem;
+  border-bottom: 0;
+}
+
+@media (hover: hover), not all, not all {
+  .estimate-wrapper .wq-Form .wq-Option > .wq--label:hover {
+    background-color: #DAE24A;
+  }
+}
+
+.estimate-wrapper .wq-Form .wq-Attributes .wq--body input {
+  border-radius: 5px !important;
+  margin: 1rem 0 0 2% !important;
+  padding: 1rem !important;
+  max-width: 98% !important;
+}
+
+@media only screen and (max-width: 750px) {
+  .estimate-wrapper .wq-Form .wq-Attributes .wq--body input {
+    margin: 1rem 0 0 0;
+  }
+}
+
+.estimate-wrapper .wq-Form .wq--items .wq--name {
+  padding: 1rem;
+}
+
+.estimate-wrapper .wq-Form .wq--items .wq-Selector {
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px #ccc;
+          box-shadow: 0 2px 5px #ccc;
+  position: relative;
+  margin: 0 0 30px 0;
+  left: 0;
+}
+
+.estimate-wrapper .wq-Form .wq--items .wq-Selector .wq--head {
+  padding: 2rem;
+  border-bottom: 0;
+}
+
+.estimate-wrapper .wq-Form .wq--items .wq-Selector .wq--label {
+  padding-bottom: 2.5rem;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=estimate.css.map */

@@ -1,0 +1,98 @@
+//mixin
+@import 'mixin/mixin';
+@import 'mixin/variables';
+
+.estimate-wrapper{
+.entry-title{
+	margin-bottom: 3rem;
+}
+
+.wq-Monitor>.wq--entries>.wq--entry>.wq--prop {
+padding: 16px;
+font-size: 16px!important;
+}
+
+
+.wq-InputGroup{
+		.wq-type-primary{
+margin: 0 auto 5rem!important;
+border-radius: 5px!important;
+background: #941F24!important;
+width: 50%!important;
+min-width: 344px!important;
+padding: 1.5rem!important;
+		}
+
+	}
+
+
+.wq-Monitor{
+	.wq--entries{
+		border-radius: 5px 5px 0 5px!important;
+		  position: relative;
+		  left: 0;
+	}
+	.wq--entry.wq-for-tax,
+	.wq--entry.wq-for-subtotal{
+border-top:0!important;
+	}
+	.wq--entry.wq-for-total{
+		border-top:0!important;
+		border-radius: 0px 0px 5px 5px!important;
+	}
+	  .wq--head{
+	  padding: 2rem;
+	  border-bottom: 0;
+	  }
+
+}
+
+.wq-Form {
+@media (hover: hover), not all, not all {
+.wq-Option>.wq--label:hover {
+	background-color: #DAE24A;
+}
+}
+
+.wq-Attributes{
+	.wq--body{
+		input{
+border-radius: 5px!important;
+margin: 1rem 0 0 2%!important;
+padding: 1rem!important;
+max-width: 98%!important;
+			@include mq(sp) {
+margin: 1rem 0 0 0;
+			  }
+		}
+
+	}
+
+}
+
+.wq--items{
+	.wq--name{
+		padding: 1rem;
+	}
+	.wq-Selector {
+border-radius: 5px;
+  box-shadow: $button-shadow;
+  position: relative;
+  margin: 0 0 30px 0;
+  left: 0;
+  .wq--head{
+  padding: 2rem;
+  border-bottom: 0;
+  }
+
+.wq--label{
+padding-bottom: 2.5rem;
+opacity: 0.8;
+}
+	}
+
+}
+}
+}
+
+
